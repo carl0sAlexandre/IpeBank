@@ -1,0 +1,860 @@
+body {
+    margin: 0;
+    background-color: #F5F5F5;
+}
+
+.color_inicio{
+    color: #FDB200;
+}
+
+h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.015em;
+    color: #000000;
+    height: 2px;
+}
+
+h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 30px;
+    letter-spacing: 0.015em;
+    color: #10101098;
+    height: 12px;
+}
+
+h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 10px;
+    color: #F5F5F5;
+}
+
+h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.015em;
+    color: #ffffff;
+    height: 8px;
+}  
+
+h5{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 9px;
+    line-height: 13px;
+    letter-spacing: 0.015em;
+    color: #ffffff;
+    text-align: center;
+    height: 45px;
+    width: 135px;
+}
+
+h6 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size:11px;
+    line-height: 15px;
+    letter-spacing: 0.015em;
+    color: #ffffff;
+}
+
+
+button{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size:11px;
+    line-height: 15px;
+    letter-spacing: 0.015em;
+}
+
+.conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lado_esquerdo_cima{
+    height: 100vh;
+    width: 19vw;
+    background-color: #001A49;
+}
+
+.ipebank {
+    display: flex;
+    align-items: center;
+    height: 16vh;
+    width: 16vw;
+    justify-content: center;
+    gap: 10px;
+}
+
+.home {
+    display: flex;
+    height: 50px;
+    width: 290px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.posicao_barra_laranja{
+    display: flex;
+    height: 50px;
+    width: 144px;
+    justify-content: flex-end;
+}
+
+.barra_laranja{
+    border: #FDB200 solid 4px;
+    border-radius: 10px;
+    height: 38px;
+}
+
+.transacoes {
+    display: flex;
+    height: 50px;
+    width: 160px;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+}
+
+.cartoes{
+    display: flex;
+    height: 50px;
+    width: 140px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.perfil{
+    display: flex;
+    height: 50px;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.configuracoes{
+    display: flex;
+    height: 50px;
+    width: 170px;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.lado_esquerdo_baixo{
+    height: 44vh;
+    width: 19vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.chamadas{
+    text-align: center;
+    border: #797979e8 solid 2px;
+    border-radius: 5px;
+    height: 160px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botao_chamadas{
+    height: 28px;
+    width: 125px;
+    background-color: #FDB200;
+    border-radius: 6px;
+    border: none;
+}
+
+.desconectar{
+    text-align: center;
+    border: #797979e8 solid 2px;
+    border-radius: 5px;
+    height: 32px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    background: transparent;
+}
+
+.central {
+    height: 100vh;
+    width: 51vw;
+}
+
+.seus_cartoes{
+    display: flex;
+    height: 50px;
+    width: 55vw;
+    justify-content: center;
+    align-items: center;
+    gap: 472px;
+}
+
+.central_cartoes{
+    display: flex;
+    height: 178px;
+    width: 750px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.ver_todos{
+    display: flex;
+    height: 39px;
+    width: 72px;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+.cartao_1{
+    display: flex;
+    height: 145px;
+    width: 220px;
+    background-color: #0067F4;
+    border-radius: 5%;
+    flex-direction: row-reverse;
+    transition: transform 0.2s ease;
+    flex-wrap: wrap;
+}
+
+.cartao_1:hover{
+    transform: scale(1.1);
+}
+
+.cima_cartao{
+    height: 75px;
+    width: 206px;
+    display: flex;
+    gap: 112px;
+    align-items: flex-end;
+}
+
+.chip{
+    height: 34px;
+    width: 45px;
+    background-color: #0057CF;
+    border-radius: 10px;
+}
+
+.data_cartao{
+    height: 73px;
+    width: 39px;
+    
+}
+
+.cor_data{
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+
+.baixo_cartao{
+    height: 67px;
+    width: 204px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nome_cartao{
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.dados_cartao{
+    height: 65px;
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_cartao{
+    height: 55px;
+    width: 55px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.cartao_2 {
+    display: flex;
+    height: 125px;
+    width: 200px;
+    background-color: #001A49;
+    border-radius: 5%;
+    flex-direction: row-reverse;
+    transition: transform 0.2s ease;
+    flex-wrap: wrap;
+}
+
+.cartao_2:hover {
+    transform: scale(1.1);
+}
+
+.cima_cartao_2{
+    height: 58px;
+    width: 188px;
+    display: flex;
+    gap: 92px;
+    align-items: flex-end;
+}
+
+.data_cartao_2{
+    height: 60px;
+    width: 40px;
+}
+
+.cor_data_2{
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+.chip_2{
+    height: 27px;
+    width: 38px;
+    background-color: #001233;
+    border-radius: 10px;
+}
+
+.dados_cartao_2{
+    height: 65px;
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_cartao_2{
+    height: 60px;
+    width: 55px;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.baixo_cartao_2{
+    height: 67px;
+    width: 187px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nome_cartao_2{
+    color: #FFFFFF;
+    font-size: 11px;
+}
+
+
+.cartao_3{
+    display: flex;
+    height: 119px;
+    width: 155px;
+    background-color: #001A49;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    flex-direction: row-reverse;
+    transition: transform 0.2s ease;
+    flex-wrap: wrap;
+}
+
+.cartao_3:hover {
+    transform: scale(1.1);
+}
+
+.cima_cartao_3{
+    height: 58px;
+    width: 145px;
+    display: flex;
+    gap: 92px;
+    align-items: flex-end;
+}
+
+.cor_data_3{
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+.chip_3{
+    height: 26px;
+    width: 37px;
+    background-color: #001233;
+    border-radius: 10px
+}
+
+.dados_cartao_3{
+    height: 65px;
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.baixo_cartao_3{
+    height: 62px;
+    width: 143px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nome_cartao_3{
+    color: #FFFFFF;
+    font-size: 11px;
+}
+
+.transacoes_recentes{
+    height: 37vh;
+    width: 55vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ultimas_transacoes{
+    background-color: #ebebeb;
+    border-radius: 10px;
+    height: 31vh;
+    width: 47vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Ultimas{
+    display: flex;
+    height: 30px;
+    width: 53vw;
+    justify-content: center;
+    gap: 400px;
+    align-items: flex-start;
+}
+
+
+.dividas{
+    display: flex;
+    height: 30px;
+    width: 53vw;
+    justify-content: center;
+    gap: 400px;
+    align-items: flex-start;
+}
+
+.dividas_pendentes {
+    height: 19vh;
+    width: 51vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabela_dividas{
+    height: 14vh;
+    width: 43vw;
+    display: flex;
+    gap: 15px;
+}
+
+.divida_ipva, .divida_casa, .McDonalds{
+    background-color: #F0F0F0;
+    height: 108px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao_divida{
+    height: 108px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.circulo_img{
+    background-color: #0057CF;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.posicao_texto_div{
+    display: flex;
+    height: 45px;
+    width: 101px;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.divida_texto{
+    font-size: 10px;
+}
+
+#tabela_dividas{
+    display: flex;
+    height: 30vh;
+    width: 44vw;
+    flex-direction: column;
+}
+
+.tabela{
+    display: flex;
+    height: 24vh;
+    width: 44vw;
+    justify-content: space-between;
+}
+
+table{
+    display: flex;
+    height: 26vh;
+    width: 44vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+td{
+    display: flex;
+    height: 50px;
+    width: 190px;
+    color: #000000;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.015em;
+}
+
+.row{
+    display: flex;
+    height: 41px;
+    width: 44vw;
+    align-items: center;
+    gap: 10px;
+}
+
+.imagem_dinheiro {
+    width: 30px;
+    height: 30px;
+}
+
+.name_divida_class{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+
+}
+
+.vencimento_class{
+    display: flex;
+    width: 130px;
+    justify-content: flex-start;
+    color: #00000091;
+}
+
+.valor_class {
+    color: #FF1313;
+    font-weight: 800;
+
+}
+
+.imagem_seta_baixo{
+    width: 18px;
+    height: 18px;
+}
+
+.lado_direito{
+    height: 100vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.retangulo{
+    height: 90vh;
+    width: 26vw;
+    background-color: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+}
+
+.cima{
+    height: 80vh;
+    width: 26vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.circulo{
+    border: #0067F4 solid 23px;
+    border-radius: 50%;
+    height: 145px;
+    width: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numero_circulo{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 43px;
+    color: #0067F4;
+    font-weight: 900;
+    line-height: 8px;
+}
+
+.limite_total{
+    height: 11vw;
+    width: 20vw;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.espaco_quadrado{
+    height: 14vh;
+    width: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+
+.quadrado_1{
+    background-color: #001A49;
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+}
+
+.quadrado_2{
+    background-color: #0064C2;
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+}
+
+.textos_limites{
+    display: flex;
+    height: 16vh;
+    width: 28vw;
+    gap: 34px;
+    flex-direction: column;
+}
+
+.limite_text{
+    height: 12px;
+    font-size: 12px;
+}
+
+.ver_extrato{
+    height: 6vh;
+    width: 20vw;
+}
+
+.botao_extrato{
+    height: 6vh;
+    width: 20vw;
+    background: #FDB200;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    border-radius: 10px;
+    color: #001A49;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    line-height: 8px;
+}
+
+.baixo{
+    height: 37vh;
+    width: 26vw;
+}
+
+.cartao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 26vw;
+}
+
+.imagem_mulher{
+    margin-left: -33px;
+    margin-top: -33px;
+}
+
+.retangulo_cartao{
+    background-color: #001A49;
+    height: 23vh;
+    width: 21vw;
+    display: flex;
+    border-radius: 10px;
+}
+
+.texto_retangulo{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.015em;
+    color: #ffffff;
+    
+}
+
+.posicao_texto_retangulo{
+    height: 51px;
+    width: 118px;
+    display: flex;
+    align-items: center;
+}
+
+strong{
+    color: #FDB200;
+}
+
+.logo_banco{
+    display: flex;
+    height: 170px;
+    width: 33px;
+    align-items: flex-end;
+}
+
+.modal_conteiner{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.modal_divida_ipva , .modal_divida_aluguel , .modal_divida_mcdonalds {
+    display: none;
+    background-color: #FAFAFA;
+    height: 320px;
+    position: fixed;
+    width: 420px;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s;
+    animation: modal .4s;
+}
+
+.circulo_modal{
+    background-color: #0057CF;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_dados_pagamento{
+    height: 50px;
+    width: 175px;
+}
+
+.caixas_textos{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    height: 136px;
+    width: 340px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+input{
+    width: 320px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    background: #F0F0F0;
+    padding: 10px;
+}
+
+.botao_confirmar_pagamento{
+    height: 35px;
+    width: 340px;
+    background-color: #FDB200;
+    border: none;
+    border-radius: 8px;
+}
+
+.posicao_botao_x{
+    height: 20px;
+    width: 385px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botao_x_ipva, .botao_x_aluguel, .botao_x_mcdonalds{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #FAFAFA;
+}
+
+@keyframes modal {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -60px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }

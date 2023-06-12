@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>IpeBank</title>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="modal_conteiner">
+            <div class="modal_divida_ipva">
+                <div class="posicao_botao_x">
+                    <button class="botao_x_ipva" ><img width="15px" src="/img/x.svg" alt=""></button>
+                </div>
+                <div class="circulo_modal">
+                    <img width="30px" src="img/carro.svg" alt="">
+                </div>
+                <div class="texto_dados_pagamento">
+                    <h1>Dados do Pagamento:</h1>
+                </div>
+                <div class="caixas_textos">
+                    <input type="text" placeholder="Vencimento: 12/11/2023" name="vencimento_divida_ipva" id="vencimento_divida_ipva" required>
+                    <input type="text" placeholder="Valor: R$ 450,00" name="valor_divida_ipva" id="valor_divida_ipva" required>
+                    <button type="click" value="IPVA" onclick="botaoConfirmar(event)" class="botao_confirmar_pagamento">Confirmar Pagamento</button>
+                </div>
+            </div>
+            <div class="modal_divida_aluguel">
+                <div class="posicao_botao_x">
+                    <button class="botao_x_aluguel" ><img width="15px" src="/img/x.svg" alt=""></button>
+                </div>
+                <div class="circulo_modal">
+                    <img width="30px" src="img/casa.divida.svg" alt="">
+                </div>
+                <div class="texto_dados_pagamento">
+                    <h1>Dados do Pagamento:</h1>
+                </div>
+                <div class="caixas_textos" >
+                    <input type="text" placeholder="Vencimento: 01/05/2023" name="vencimento_divida_aluguel" id="vencimento_divida_aluguel" required>
+                    <input type="text" placeholder="Valor: R$ 600,00" name="valor_divida_aluguel" id="valor_divida_aluguel" required>
+                    <button type="click" value="Aluguel" onclick="botaoConfirmar(event)" class="botao_confirmar_pagamento">Confirmar Pagamento</button>
+                </div>
+            </div>
+            <div class="modal_divida_mcdonalds">
+                <div class="posicao_botao_x">
+                    <button class="botao_x_mcdonalds" ><img width="15px" src="/img/x.svg" alt=""></button>
+                </div>
+                <div class="circulo_modal">
+                    <img width="30px" src="img/mcdonalds.svg" alt="">
+                </div>
+                <div class="texto_dados_pagamento">
+                    <h1>Dados do Pagamento:</h1>
+                </div>
+                <div class="caixas_textos">
+                    <input type="text" placeholder="Vencimento: 20/12/2023" name="vencimento_divida_mcdonalds" id="vencimento_divida_mcdonalds" required>
+                    <input type="text" placeholder="Valor: R$ 30,00" name="valor_divida_mcdonalds" id="valor_divida_mcdonalds" required>
+                    <button type="click" value="McDonalds" onclick="botaoConfirmar(event)" class="botao_confirmar_pagamento">Confirmar Pagamento</button>
+                </div>
+            </div>
+        </div>
+        <div class="lado_esquerdo_cima">
+            <div class="ipebank">
+                <img width="40" height="40" src="img/logo.svg" alt="">
+                <img width="120" height="120" src="img/IpeBank.svg" alt="">
+            </div>
+            <div class="home">
+                <img src="img/casa.svg" alt="">
+                <h3 class="color_inicio">Inicio</h3>
+                <div class="posicao_barra_laranja ">
+                    <div class="barra_laranja"></div>
+                </div>
+            </div>
+            <div class="transacoes">
+                <img src="img/transaçoes.svg" alt="">
+                <h3>Transações</h3>
+            </div>
+            <div class="cartoes">
+                <img src="img/cartao.svg" alt="">
+                <h3>Cartões</h3>
+            </div>
+            <div class="perfil">
+                <img src="img/perfil.svg" alt="">
+                <h3>Perfil</h3>
+            </div>
+            <div class="configuracoes">
+                <img src="img/engrenagem.svg" alt="">
+                <h3>Configurações</h3>
+            </div>
+            <div class="lado_esquerdo_baixo">
+                <div class="chamadas">
+                    <h4>Precisa de Ajuda?</h4>
+                    <h5>Entre no menu de chamados para tirarmos suas dúvidas e resolvermos seus problemas!</h5>
+                    <button class="botao_chamadas">Chamados</button>
+                </div>
+                <button class="desconectar">
+                    <img width="15px" src="img/porta.svg" alt="">
+                    <h6>Desconectar</h6>
+                </button>
+            </div>
+        </div>
+        <div class="central">
+            <div class="seus_cartoes">
+                <h1>Seus Cartões</h1> 
+                <div class="ver_todos">
+                    <h2>Ver todos</h2>
+                    <img width="6px" src="img/seta_direita.svg" alt="">
+                </div>
+            </div>
+            <div class="central_cartoes">
+                <div class="cartao_1">
+                    <div class="cima_cartao">
+                        <div class="chip"></div>
+                        <div class="data_cartao">
+                            <h1 class="cor_data">01/25</h1>
+                        </div>
+                    </div>
+                    <div class="baixo_cartao">
+                        <div class="dados_cartao">
+                            <h1 class="cor_data">*** *** *** 0000</h1>
+                            <h1  class="nome_cartao">João Vitor Da Silva</h1>
+                        </div>
+                        <div class="logo_cartao">
+                            <img width="35px" src="img/logo_cartao.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="cartao_2">
+                    <div class="cima_cartao_2">
+                        <div class="chip_2"></div>
+                        <div class="data_cartao_2">
+                            <h1 class="cor_data_2">01/25</h1>
+                        </div>
+                    </div>
+                    <div class="baixo_cartao_2">
+                        <div class="dados_cartao_2">
+                            <h1 class="cor_data_2">*** *** *** 0000</h1>
+                            <h1  class="nome_cartao_2">João Vitor Da Silva</h1>
+                        </div>
+                        <div class="logo_cartao_2">
+                            <img width="25px" src="img/logo_cartao.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="cartao_3">
+                    <div class="cima_cartao_3">
+                        <div class="chip_3"></div>
+                    </div>
+                    <div class="baixo_cartao_3">
+                        <div class="dados_cartao_3">
+                            <h1 class="cor_data_3">*** *** *** 0000</h1>
+                            <h1  class="nome_cartao_3">João Vitor Da Silva</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Ultimas">
+                <h1>Ultimas Transações</h1>
+                <div class="ver_todos">
+                    <h2>Ver todos</h2>
+                    <img width="6px" src="img/seta_direita.svg" alt="">
+                </div>
+            </div>
+            <div class="transacoes_recentes">
+                <div class="ultimas_transacoes">
+                    <div class="tabela" >
+                        <table >
+                            <tbody id="tabela_dividas"> 
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="dividas">
+                <h1>Dividas Pendentes</h1>
+                <div class="ver_todos">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="dividas_pendentes">
+                <div class="tabela_dividas">
+                    <div class="divida_ipva"  >
+                        <button class="botao_divida" value="Ipva" onclick="modal_ipva()" > 
+                            <div class="circulo_img">
+                                <img width="18px" src="img/carro.svg" alt="">
+                            </div>
+                            <div class="posicao_texto_div">
+                                <h1 class="divida_texto">IPVA</h1>
+                                <h1 class="divida_texto">Valor: R$ 450,00</h1>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="divida_aluguel">
+                        <button class="botao_divida" value="Aluguel" onclick="modal_aluguel()"> 
+                            <div class="circulo_img">
+                                <img width="18px" src="img/casa.divida.svg" alt="">
+                            </div>
+                            <div class="posicao_texto_div">
+                                <h1 class="divida_texto">Aluguel</h1>
+                                <h1 class="divida_texto">Valor: R$ 600,00</h1>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="divida_McDonalds">
+                        <button class="botao_divida" value="McDonalds" onclick="modal_McDonalds()"> 
+                            <div class="circulo_img">
+                                <img width="18px" src="img/mcdonalds.svg" alt="">
+                            </div>
+                            <div class="posicao_texto_div">
+                                <h1 class="divida_texto">McDonalds</h1>
+                                <h1 class="divida_texto">Valor: R$ 30,00</h1>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lado_direito">
+            <div class="retangulo">
+                <div class="cima">
+                    <div class="circulo">
+                        <h1 class="numero_circulo">100%</h1>
+                    </div>
+                    <div class="limite_total">
+                        <div class="espaco_quadrado">
+                            <div class="quadrado_1"></div>
+                            <div class="quadrado_2"> </div>
+                        </div>
+                        <div class="textos_limites">
+                            <h1 class="limite_text">Limite Total: R$ 2.500,00</h1>
+                            <h1 class="limite_text">Limite Utilizado: R$ 2.500,00</h1>
+                        </div>
+                    </div>
+                    <div class="ver_extrato">
+                        <button class="botao_extrato">
+                            Ver extrato
+                            <img width="7px" src="img/seta_direita.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="baixo">
+                    <div class="cartao">
+                        <div class="retangulo_cartao"> 
+                            <div class="posicao_mulher">
+                                <img  class="imagem_mulher" width="175"  src="img/mulher.svg" alt="">
+                            </div>
+                            <div class="posicao_texto_retangulo">
+                                <h1 class="texto_retangulo">Peça já o seu cartão <strong>IpeBank</strong></h1>
+                            </div>
+                            <div class="logo_banco">
+                                <img width="38px" src="img/logo.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
